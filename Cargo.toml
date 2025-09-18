@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "programs/*"
+]
+resolver = "2"
+
+[profile.release]
+overflow-checks = true
+lto = "off"
+codegen-units = 64
+incremental = true
+
+[profile.release.build-override]
+opt-level = 1
+incremental = true
+codegen-units = 64

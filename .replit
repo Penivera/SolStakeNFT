@@ -1,7 +1,0 @@
-modules = ["rust-stable"]
-[agent]
-expertMode = true
-
-[nix]
-channel = "stable-25_05"
-packages = ["nodejs", "curl", "pkg-config", "libudev-zero"]

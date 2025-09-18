@@ -1,0 +1,11 @@
+node_modules/
+target/
+dist/
+lib/
+*.log
+.DS_Store
+.anchor
+test-ledger/
+.vscode/
+keypairs/
+*.so

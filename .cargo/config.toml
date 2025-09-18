@@ -1,0 +1,14 @@
+[build]
+target-dir = "target"
+
+[profile.release]
+lto = "off"
+codegen-units = 64
+incremental = true
+
+[target.bpfel-unknown-unknown]
+rustflags = [
+    "-C", "lto=no",
+    "-C", "opt-level=1", 
+    "-C", "codegen-units=64"
+]
